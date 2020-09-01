@@ -8,7 +8,7 @@ body{
 	padding: 50px 0;
 }
 
-.middle-area{
+.container{
 	width:80%;
 	margin:auto;
 }
@@ -63,7 +63,7 @@ body{
 .header-bottom h2{
 	color:#f7f3ea;
 	font-size:43px;
-	line-height: 15px;
+	line-height: 25px;
 }
 
 .call-to-action-header a{
@@ -95,7 +95,7 @@ body{
 .services-area hr{
 
 }
-.services-area .middle-area > h2{
+.services-area .container > h2{
 	font-size: 40px;
 	color:#fff;
 	margin: 0;
@@ -111,7 +111,7 @@ body{
 	width:10%;
 }
 
-.services-area .middle-area > p{
+.services-area .container > p{
 	font-size: 16.5px;
 	color:#fff;
 	width: 55%;
@@ -125,10 +125,10 @@ body{
 	margin-top: 50px;
 }
 
-.services-box .box{
+/*.services-box .box{
 	width: 22%;
 	display: inline-block;
-}
+}*/
 .services-box .box h2{
 	color:#fff;
 	text-transform: uppercase;
@@ -152,7 +152,7 @@ body{
 .team-area hr{
 
 }
-.team-area .middle-area > h2{
+.team-area .container > h2{
 	font-size: 40px;
 	color:#3c4761;
 	margin: 0;
@@ -168,7 +168,7 @@ body{
 	width:10%;
 }
 
-.team-area .middle-area > p{
+.team-area .container > p{
 	font-size: 16.5px;
 	color:#3c4761;
 	width: 55%;
@@ -182,10 +182,10 @@ body{
 	margin-top: 50px;
 }
 
-.team-box .box{
+/*.team-box .box{
 	width: 23%;
 	display: inline-block;
-}
+}*/
 .team-box .box h2{
 	color:#27283d;
 	text-transform: uppercase;
@@ -237,8 +237,8 @@ body{
 .social-link ul li i{
 	color:#fff;
 	background: #BBD1DE;
-	width:15px;
-	height: 15px;
+	width:40px;
+	height: 40px;
 	padding: 10px;
 	font-size: 15px;
 	border-radius: 50%;
@@ -255,7 +255,7 @@ body{
 	padding: 50px 0;
 }
 
-.skill-area .middle-area > h2{
+.skill-area .container > h2{
 	font-size: 40px;
 	color:#3c4761;
 	margin: 0;
@@ -271,7 +271,7 @@ body{
 	width:10%;
 }
 
-.skill-area .middle-area > p{
+.skill-area .container > p{
 	font-size: 16.5px;
 	color:#3c4761;
 	width: 55%;
@@ -285,10 +285,10 @@ body{
 	margin-top: 50px;
 }
 
-.skill-box .box{
+/*.skill-box .box{
 	width: 22%;
 	display: inline-block;
-}
+}*/
 .skill-box .box h2{
 	color:#3c4761;
 	text-transform: uppercase;
@@ -309,7 +309,7 @@ body{
 	padding: 50px 0;
 }
 
-.pfolio-area .middle-area > h2{
+.pfolio-area .container > h2{
 	font-size: 40px;
 	color:#393939;
 	margin: 0;
@@ -325,7 +325,7 @@ body{
 	width:10%;
 }
 
-.pfolio-area .middle-area > p{
+.pfolio-area .container > p{
 	font-size: 16.5px;
 	color:#393939;
 	width: 55%;
@@ -374,6 +374,7 @@ body{
 	border-radius: 5px;
 	font-size: 16.5px;
 	margin-left: 10px;
+	cursor: pointer;
 }
 
 .pfolio-menu ul li a:hover,.pfolio-menu ul li a.active{
@@ -418,7 +419,7 @@ body{
 	padding: 50px 0;
 }
 
-.testimonial-area .middle-area > h2{
+.testimonial-area .container > h2{
 	font-size: 40px;
 	color:#fff;
 	margin: 0;
@@ -434,7 +435,7 @@ body{
 	width:10%;
 }
 
-.testimonial-area .middle-area > p{
+.testimonial-area .container > p{
 	font-size: 16.5px;
 	color:#fff;
 	width: 55%;
@@ -512,7 +513,7 @@ body{
 	padding: 50px 0;
 }
 
-.contact-area .middle-area > h2{
+.contact-area .container > h2{
 	font-size: 40px;
 	color:#fff;
 	margin: 0;
@@ -528,7 +529,7 @@ body{
 	width:10%;
 }
 
-.contact-area .middle-area > p{
+.contact-area .container > p{
 	font-size: 16.5px;
 	color:#fff;
 	margin: auto;
@@ -541,6 +542,10 @@ body{
 	margin:auto;
 }
 
+.username{
+	margin-top: 50px;
+}
+
 .username input{
 	font-size: 20px;
 	background: #273a71;
@@ -548,19 +553,42 @@ body{
 	color: #fff;
 	border:1px solid transparent;
 	box-sizing: border-box;
-	margin-top: 50px;
 	border-radius: 5px;
+	display: block;
+	width:100%;
 }
 
-.username input:first-child{
+.username .namebox{
 	width: 49%;
 	float: left;
+	position: relative;
 }
 
-.username input:last-child{
+.username .emailbox{
 	width: 49%;
 	float: right;
+	position: relative;
 }
+
+.namebox label{
+	color:#fff;
+	position: absolute;
+	top:11px;
+	left:17px;
+}
+.namebox label span{
+	color:red;
+}
+.emailbox label{
+	color:#fff;
+	position: absolute;
+	top:11px;
+	left:17px;
+}
+.emailbox label span{
+	color:red;
+}
+
 .contact-box textarea{
 	width: 100%;
 	font-size: 20px;
@@ -624,4 +652,45 @@ body{
 
 .footer-menu ul li a:hover{
 	color: #30bae7;
+}
+
+/*Jquery Slider*/
+.pie-title-center {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+
+.pie-value {
+  display: block;
+  position: absolute;
+  font-size: 50px;
+  height: 40px;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin-top: -20px;
+  line-height: 40px;
+  color:#3C4761;
+}
+
+/*responsive*/
+
+
+
+
+
+@media all and (max-width: 1142px) {
+  .header-bottom h2{
+	color:#f7f3ea;
+	font-size: 35px;
+	line-height: 15px;
+}
+}
+@media all and (max-width: 929px) {
+  .header-bottom h2{
+	color:#f7f3ea;
+	font-size: 25px;
+	line-height: 15px;
+}
 }
